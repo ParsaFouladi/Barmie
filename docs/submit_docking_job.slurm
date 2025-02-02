@@ -15,10 +15,6 @@
 # Activate the virtual environment (if you use one)
 # source /path/to/venv/bin/activate  # Uncomment and adjust if necessary
 source activate vina
-# Define paths (replace with your actual paths)
-#RECEPTOR_FOLDER="/mainfs/home/mk6n23/new_enviroment_parsa/data/mr_proteins_filtered/"
-#LIGAND_FOLDER="/mainfs/home/mk6n23/mkdata/mol2_files/new_ligands/pdbqt_version/"
-#OUTPUT_FOLDER="/mainfs/home/mk6n23/mkdata/docked_complexes/mr_results2"
 
 # Run the Python script
 python3 docking_autodock_vina.py --receptor_folder /mainfs/home/mk6n23/new_enviroment_parsa/data/ten_proteins/ --ligand_folder /mainfs/home/mk6n23/new_enviroment_parsa/data/cortisol/ --output_folder /mainfs/home/mk6n23/new_enviroment_parsa/data/results/test_opts/ -e 32 --center 5 2 -15 -b 20 20 20 -n 39
