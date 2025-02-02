@@ -19,7 +19,7 @@ All file conversion scripts follow the same command-line structure for consisten
 
 ```bash
 python from_to.py input_folder output_folder
-
+```
 ---
 ## Protein Alignment Script
 
@@ -40,11 +40,6 @@ python alignment.py input_folder output_folder reference_protein.pdb
 - **`input_folder`**: Folder containing the protein files to be aligned.
 - **`output_folder`**: Destination folder where the aligned files will be saved.
 - **`reference_protein.pdb`**: The reference protein structure to which all other proteins will be aligned.
-
-### Example:
-```bash
-python alignment.py ./proteins ./aligned_proteins reference.pdb
-```
 
 This command will align all proteins in the `./proteins` folder to `reference.pdb` and save the aligned structures in the `./aligned_proteins` folder.
 
