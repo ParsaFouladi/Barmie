@@ -14,6 +14,7 @@ This Python script is a high-throughput docking pipeline designed to facilitate 
 - AutoDock Vina
 - `vina` Python package
 - Multiprocessing library (default in Python)
+- Having your ligand and protein files in pdbqt format
 
 ## Installation
 1. Install Python dependencies:
@@ -36,6 +37,7 @@ python docking_pipeline.py \
     --box_size 20 20 20 \
     --num_cpus 4
 ```
+You can see an example of slurm file in docs folder
 
 ### Arguments
 - `--receptor_folder`: Path to the folder containing receptor files in `.pdbqt` format.
