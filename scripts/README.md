@@ -45,7 +45,7 @@ This command will align all proteins in the `./proteins` folder to `reference.pd
 
 **Note:** Ensure that **PyMOL** is correctly installed in your Python environment to run this script successfully. Without PyMOL, the alignment functionalities will not work.
 
-# Binding Pocket Filtering Script
+## Binding Pocket Filtering Script
 
 The `filter_pocket.py` script is designed to identify and extract binding pockets from protein structures. This script helps refine the protein structure for docking studies by focusing on specific binding regions.
 
