@@ -44,3 +44,27 @@ python alignment.py input_folder output_folder reference_protein.pdb
 This command will align all proteins in the `./proteins` folder to `reference.pdb` and save the aligned structures in the `./aligned_proteins` folder.
 
 **Note:** Ensure that **PyMOL** is correctly installed in your Python environment to run this script successfully. Without PyMOL, the alignment functionalities will not work.
+
+# Binding Pocket Filtering Script
+
+The `filter_pocket.py` script is designed to identify and extract binding pockets from protein structures. This script helps refine the protein structure for docking studies by focusing on specific binding regions.
+
+### Features:
+- Identifies binding pockets based on user-defined parameters.
+- Filters atoms based on proximity to the binding site and B-factor thresholds.
+- Logs processing status for each file.
+
+### Requirements:
+- **Biopython** must be installed to run this script successfully.
+
+### Usage:
+```bash
+python filter_pocket.py input_folder output_folder pocket_name num_atoms_before
+```
+
+- **`input_folder`**: Folder containing the PDB files to be processed.
+- **`output_folder`**: Destination folder where the filtered structures will be saved.
+- **`pocket_name`**: The identifier for the binding pocket you want to target.
+- **`num_atoms_before`**: The number of atoms to consider around the binding pocket for filtering.
+
+This command will process all `.pdb` files in the `./proteins` folder, filter the structures based on the `KAIEP` pocket, and save the results in the `./filtered_proteins` folder.
