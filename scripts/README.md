@@ -19,3 +19,33 @@ All file conversion scripts follow the same command-line structure for consisten
 
 ```bash
 python from_to.py input_folder output_folder
+
+
+## Protein Alignment Script
+
+The `alignment.py` script is designed to align multiple protein structures to a reference protein using PyMOL’s structural alignment capabilities. This is particularly useful when preparing proteins for docking or structural comparison studies.
+
+### Features:
+- Aligns multiple proteins to a specified reference structure.
+- Outputs aligned structures in PDB format for downstream analysis.
+
+### Requirements:
+- **PyMOL** must be installed and accessible within your Python environment.
+
+### Usage:
+```bash
+python alignment.py input_folder output_folder reference_protein.pdb
+```
+
+- **`input_folder`**: Folder containing the protein files to be aligned.
+- **`output_folder`**: Destination folder where the aligned files will be saved.
+- **`reference_protein.pdb`**: The reference protein structure to which all other proteins will be aligned.
+
+### Example:
+```bash
+python alignment.py ./proteins ./aligned_proteins reference.pdb
+```
+
+This command will align all proteins in the `./proteins` folder to `reference.pdb` and save the aligned structures in the `./aligned_proteins` folder.
+
+**Note:** Ensure that **PyMOL** is correctly installed in your Python environment to run this script successfully. Without PyMOL, the alignment functionalities will not work.
