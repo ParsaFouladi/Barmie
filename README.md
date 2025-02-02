@@ -15,6 +15,7 @@ The BARMIE pipeline is designed for high-throughput computational docking and bi
 ### Repository Structure
 - **/docking**: Contains the docking script and the corresponding slurm file
 - **/scripts**: Contains the scripts that can be used to preprocess the protein and ligand files, such as file format conversion, pocket filtering, protein alignment and etc.
+- **/docs**: Contains related documentations and examples
 
 ### Applications
 Originally developed for ecological hazard ranking, the pipeline is also suitable for:
