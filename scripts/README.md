@@ -20,7 +20,7 @@ All file conversion scripts follow the same command-line structure for consisten
 ```bash
 python from_to.py input_folder output_folder
 
-
+---
 ## Protein Alignment Script
 
 The `alignment.py` script is designed to align multiple protein structures to a reference protein using PyMOL’s structural alignment capabilities. This is particularly useful when preparing proteins for docking or structural comparison studies.
