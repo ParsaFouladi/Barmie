@@ -15,13 +15,14 @@ def align_proteins(proteins,reference, output_path="alignment_output"):
             cmd.load(protein, "protein")
             cmd.super("protein", "reference")
 
-            protein_name = protein.split("\\")[-1]
+            protein_name = protein.split("/")[-1]
             # Save the aligned protein to a new PDB file
             cmd.save(f"{output_path}/aligned_{protein_name}", "protein")
             # Delete the protein object
             cmd.delete("protein")
-        except:
+        except Exception as e:
             print("An error occurred while aligning protein:", protein)
+            print("Error:", e)
             # Delete the reference object
             cmd.delete("reference")
             cmd.delete("protein")
@@ -42,7 +43,7 @@ if len(sys.argv) > 1:
 
     file_number=0
     for file in onlyfiles:
-        proteins.append(mypath+'\\'+file)
+        proteins.append(mypath+'/'+file)
     try:
     # Align the proteins to the reference protein
         align_proteins(proteins, reference_protein, output_path)

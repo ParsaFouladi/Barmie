@@ -31,7 +31,7 @@ if len(sys.argv) > 1:
         if not file.endswith(".pdb"):
             continue
         #create a binding pocket object
-        binding_pocket=BindingPocket(file_path=mypath+'\\'+file,output_path=f"{output_path}\\"+file,pocket=pocket,b_factor_threshold=0,num_atoms_before=num_atoms_before)
+        binding_pocket=BindingPocket(file_path=mypath+'/'+file,output_path=f"{output_path}/"+file,pocket=pocket,b_factor_threshold=0,num_atoms_before=num_atoms_before)
         #find the binding pocket
         flag=binding_pocket.find_binding_pocket()
         file_number+=1
